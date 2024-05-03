@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Properties</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Reset Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Property Card Styles */
+        .property-card {
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 40px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .property-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .property-image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .property-image img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .property-image:hover img {
+            transform: scale(1.1);
+        }
+
+        .property-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .property-info {
+            padding: 20px;
+        }
+
+        .property-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .property-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff7f50;
+            margin-bottom: 20px;
+        }
+
+        .property-description {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .property-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .property-features li {
+            margin-bottom: 10px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .property-features i {
+            margin-right: 10px;
+            color: #ff7f50;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 18px;
+        }
+
+        /* Call-to-Action Button Styles */
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ff7f50;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e66030;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Luxury Properties</h1>
+    </header>
+
+    <div class="container">
+        <div class="property-card">
+            <div class="property-image">
+                <img src="beachfront-villa-for-sale-in-koh-samui-laem-sor-14637728.jpeg" alt="Property Image">
+            </div>
+            <div class="property-info">
+                <h2 class="property-title">Modern Villa with Ocean View</h2>
+                <p class="property-price">$5,000,000</p>
+                <p class="property-description">Experience ultimate luxury in this stunning modern villa overlooking the crystal-clear waters of the ocean. With exquisite design, state-of-the-art amenities, and unparalleled views, this property offers a lifestyle of unparalleled refinement.</p>
+                <ul class="property-features">
+                    <li><i class="fas fa-bed"></i> 6 Bedrooms</li>
+                    <li><i class="fas fa-bath"></i> 7 Bathrooms</li>
+                    <li><i class="fas fa-chart-area"></i> 8000 sq ft</li>
+                    <li><i class="fas fa-car"></i> 4 Car Garage</li>
+                    <li><i class="fas fa-swimming-pool"></i> Infinity Pool</li>
+                    <li><i class="fas fa-globe"></i> Smart Home Technology</li>
+                    <li><i class="fas fa-spa"></i> Spa and Wellness Center</li>
+                    <li><i class="fas fa-wine-glass-alt"></i> Wine Cellar</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Property Card 2 -->
+        <div class="property-card">
+            <div class="property-image">
+                <img src="783c1d5ff918bc5efa5cb5bb16e71641.jpg" alt="Property Image">
+            </div>
+            <div class="property-info">
+                <h2 class="property-title">Luxury Beachfront Mansion</h2>
+                <p class="property-price">$8,500,000</p>
+                <p class="property-description">Indulge in the epitome of coastal living with this sprawling beachfront mansion. Boasting panoramic ocean views, lavish interiors, and resort-style amenities, this property offers the ultimate retreat for those seeking unparalleled luxury.</p>
+                <ul class="property-features">
+                    <li><i class="fas fa-bed"></i> 8 Bedrooms</li>
+                    <li><i class="fas fa-bath"></i> 10 Bathrooms</li>
+                    <li><i class="fas fa-chart-area"></i> 12000 sq ft</li>
+                    <li><i class="fas fa-car"></i> 6 Car Garage</li>
+                    <li><i class="fas fa-swimming-pool"></i> Private Beach Access</li>
+                    <li><i class="fas fa-globe"></i> Home Theater</li>
+                    <li><i class="fas fa-spa"></i> Gym and Fitness Center</li>
+                    <li><i class="fas fa-wine-glass-alt"></i> Wine Tasting Room</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Property Card 3 -->
+        <div class="property-card">
+            <div class="property-image">
+                <img src="Como-Residences-Penthouse-Nakheel-3.jpg" alt="Property Image">
+            </div>
+            <div class="property-info">
+                <h2 class="property-title">Mountain Retreat</h2>
+                <p class="property-price">$6,200,000</p>
+                <p class="property-description">Escape to your own private mountain oasis with this exquisite estate. Surrounded by pristine wilderness and breathtaking views, this property offers unparalleled tranquility and luxury. Ideal for nature enthusiasts and outdoor adventurers.</p>
+                <ul class="property-features">
+                    <li><i class="fas fa-bed"></i> 5 Bedrooms</li>
+                    <li><i class="fas fa-bath"></i> 6 Bathrooms</li>
+                    <li><i class="fas fa-chart-area"></i> 10000 sq ft</li>
+                    <li><i class="fas fa-car"></i> 3 Car Garage</li>
+                    <li><i class="fas fa-tree"></i> Private Forest</li>
+                    <li><i class="fas fa-mountain"></i> Hiking Trails</li>
+                    <li><i class="fas fa-hot-tub"></i> Outdoor Spa</li>
+                    <li><i class="fas fa-fire"></i> Stone Fireplace</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Discover your dream home today. <a href="Contact.html" class="cta-button">Contact Us</a></p>
+        <p>&copy;  2024 Batman Real Estate Management. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Properties</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom Styles */
+        body {
+            background-color: #f2f2f2;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .property-card {
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 40px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .property-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .property-info {
+            padding: 20px;
+        }
+
+        .property-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .property-price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff7f50;
+            margin-bottom: 20px;
+        }
+
+        .property-description {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .property-features li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .property-features i {
+            margin-right: 10px;
+            color: #ff7f50;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 18px;
+        }
+
+        .cta-button {
+            padding: 15px 30px;
+            background-color: #ff7f50;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e66030;
+        }
+
+        /* Additional Bootstrap Styling */
+        .carousel-control-prev,
+        .carousel-control-next {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            color: #fff;
+        }
+
+        .carousel-indicators {
+            bottom: 20px;
+        }
+
+        .carousel-indicators li {
+            background-color: #fff;
+            border-radius: 50%;
+            width: 12px;
+            height: 12px;
+            margin: 0 8px;
+            border: 2px solid #333;
+        }
+
+        .carousel-indicators .active {
+            background-color: #333;
+            border-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="display-4">Luxury Properties</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="propertyCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#propertyCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#propertyCarousel" data-slide-to="1"></li>
+                <li data-target="#propertyCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="property-card">
+                                <div class="property-image">
+                                    <img src="beachfront-villa-for-sale-in-koh-samui-laem-sor-14637728.jpeg" class="img-fluid rounded-top" alt="Property Image">
+                                </div>
+                                <div class="property-info">
+                                    <h2 class="property-title">Modern Villa with Ocean View</h2>
+                                    <p class="property-price">10,000,000</p>
+                                    <p class="property-description">Experience ultimate luxury in this stunning modern villa overlooking the crystal-clear waters of the ocean. With exquisite design, state-of-the-art amenities, and unparalleled views, this property offers a lifestyle of unparalleled refinement.</p>
+                                    <ul class="property-features">
+                                        <li><i class="fas fa-bed"></i> 6 Bedrooms</li>
+                                        <li><i class="fas fa-bath"></i> 7 Bathrooms</li>
+                                        <li><i class="fas fa-chart-area"></i> 8000 sq ft</li>
+                                        <li><i class="fas fa-car"></i> 4 Car Garage</li>
+                                        <li><i class="fas fa-swimming-pool"></i> Infinity Pool</li>
+                                        <li><i class="fas fa-globe"></i> Smart Home Technology</li>
+                                        <li><i class="fas fa-spa"></i> Spa and Wellness Center</li>
+                                        <li><i class="fas fa-wine-glass-alt"></i> Wine Cellar</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more property cards for different types of properties -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="property-card">
+                                <div class="property-image">
+                                    <img src="benefits-of-living-in-luxury-apartments.png" class="img-fluid rounded-top" alt="Property Image">
+                                </div>
+                                <div class="property-info">
+                                    <h2 class="property-title">Luxury Downtown Apartment</h2>
+                                    <p class="property-price">5,500,000</p>
+                                    <p class="property-description">Enjoy urban living at its finest with this luxurious downtown apartment. Featuring panoramic city views, high-end finishes, and world-class amenities, this property offers a sophisticated lifestyle in the heart of the city.</p>
+                                    <ul class="property-features">
+                                        <li><i class="fas fa-bed"></i> 3 Bedrooms</li>
+                                        <li><i class="fas fa-bath"></i> 4 Bathrooms</li>
+                                        <li><i class="fas fa-chart-area"></i> 2500 sq ft</li>
+                                        <li><i class="fas fa-car"></i> Valet Parking</li>
+                                        <li><i class="fas fa-swimming-pool"></i> Rooftop Pool</li>
+                                        <li><i class="fas fa-globe"></i> Concierge Service</li>
+                                        <li><i class="fas fa-spa"></i> Fitness Center</li>
+                                        <li><i class="fas fa-wine-glass-alt"></i> Wine Lounge</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="property-card">
+                                <div class="property-image">
+                                    <img src="Modern-Individual-House-P15-1.1554995947.8275.jpg" class="img-fluid rounded-top" alt="Property Image">
+                                </div>
+                                <div class="property-info">
+                                    <h2 class="property-title">Individual House</h2>
+                                    <p class="property-price">3,200,000</p>
+                                    <p class="property-description">Escape to the serene countryside with this private retreat nestled amidst lush greenery and rolling hills. Featuring a charming farmhouse-style residence, expansive grounds, and panoramic views, this property offers the perfect blend of luxury and tranquility.</p>
+                                    <ul class="property-features">
+                                        <li><i class="fas fa-bed"></i> 4 Bedrooms</li>
+                                        <li><i class="fas fa-bath"></i> 5 Bathrooms</li>
+                                        <li><i class="fas fa-chart-area"></i> 5000 sq ft</li>
+                                        <li><i class="fas fa-car"></i> 2 Car Garage</li>
+                                        <li><i class="fas fa-tree"></i> Private Gardens</li>
+                                        <li><i class="fas fa-mountain"></i> Scenic Views</li>
+                                        <li><i class="fas fa-hot-tub"></i> Outdoor Jacuzzi</li>
+                                        <li><i class="fas fa-fire"></i> Cozy Fireplace</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional Carousel Item with 6 more property cards -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="property-card">
+                                <div class="property-image">
+                                    <img src="the-conjuring-house.avif" class="img-fluid rounded-top" alt="Property Image">
+                                </div>
+                                <div class="property-info">
+                                    <h2 class="property-title">Bungalows</h2>
+                                    <p class="property-price">11,200,000</p>
+                                    <p class="property-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non ante nec est condimentum efficitur.</p>
+                                    <ul class="property-features">
+                                        <li><i class="fas fa-bed"></i> 4 Bedrooms</li>
+                                        <li><i class="fas fa-bath"></i> 3 Bathrooms</li>
+                                        <li><i class="fas fa-chart-area"></i> 2500 sq ft</li>
+                                        <li><i class="fas fa-car"></i> 3 Car Garage</li>
+                                        <li><i class="fas fa-swimming-pool"></i> Indoor Pool</li>
+                                        <li><i class="fas fa-globe"></i> High-speed Internet</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more property cards here -->
+                        <!-- Repeat the structure for each property -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="property-card">
+                                <div class="property-image">
+                                    <img src="5b05e5091ae6624c008b45b9.webp" class="img-fluid rounded-top" alt="Property Image">
+                                </div>
+                                <div class="property-info">
+                                    <h2 class="property-title">Penthouses</h2>
+                                    <p class="property-price">800,000</p>
+                                    <p class="property-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non ante nec est condimentum efficitur.</p>
+                                    <ul class="property-features">
+                                        <li><i class="fas fa-bed"></i> 2 Bedrooms</li>
+                                        <li><i class="fas fa-bath"></i> 2 Bathrooms</li>
+                                        <li><i class="fas fa-chart-area"></i> 1500 sq ft</li>
+                                        <li><i class="fas fa-car"></i> 1 Car Garage</li>
+                                        <li><i class="fas fa-swimming-pool"></i> Community Pool</li>
+                                        <li><i class="fas fa-globe"></i> Security System</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more property cards here -->
+                        <!-- Repeat the structure for each property -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="property-card">
+                                <div class="property-image">
+                                    <img src="360_F_462745235_qYsZg2Nf2ebw1lylWYoNug71uHbTm61E.jpg" class="img-fluid rounded-top" alt="Property Image">
+                                </div>
+                                <div class="property-info">
+                                    <h2 class="property-title">farmhouses Title 9</h2>
+                                    <p class="property-price">1,500,000</p>
+                                    <p class="property-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non ante nec est condimentum efficitur.</p>
+                                    <ul class="property-features">
+                                        <li><i class="fas fa-bed"></i> 5 Bedrooms</li>
+                                        <li><i class="fas fa-bath"></i> 4 Bathrooms</li>
+                                        <li><i class="fas fa-chart-area"></i> 3000 sq ft</li>
+                                        <li><i class="fas fa-car"></i> 2 Car Garage</li>
+                                        <li><i class="fas fa-swimming-pool"></i> Outdoor Pool</li>
+                                        <li><i class="fas fa-globe"></i> Solar Panels</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more property cards here -->
+                        <!-- Repeat the structure for each property -->
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#propertyCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#propertyCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p class="lead">Discover your dream home today. <a href="Contact.html" class="btn btn-warning btn-lg">Contact Us</a></p>
+            <p class="mb-0">&copy; 2024 Batman Real Estate Management. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Add your JavaScript code here
+        // For example:
+        // alert('JavaScript works!');
+    </script>
+</body>
+</html>
